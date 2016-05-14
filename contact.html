@@ -56,20 +56,20 @@
             <span class="icon-bar"></span>
           </button>
 
-          <a class="navbar-brand" href="#">K Y</a>
+          <a class="navbar-brand" href="/">K Y</a>
 
         </div>
 
         <!-- #navbar navbar items -->
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="/">Home</a></li>
-            <li><a href="/feature.html">Feature</a></li>
-            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="feature.html">Feature</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Columns <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="/photo.html">Photos</a></li>
+                <li><a href="photo.html">Photos</a></li>
                 <li><a href="#">Foods</a></li>
                 <li><a href="#">Movies</a></li>
                 <li role="separator" class="divider"></li>
@@ -79,10 +79,10 @@
             </li>
           </ul>
 
-          <!-- right side bar-->
+           <!-- right side bar-->
           <!-- .navbar-form set form-group horizontal -->
           <!-- .navbar-right set to align-right -->
-          <div class="navbar-form navbar-right">
+          <form class="navbar-form navbar-right">
             <div class="form-group">
               <input type="text" placeholder="search" class="form-control">
             </div>
@@ -90,9 +90,9 @@
               <input type="password" placeholder="Password" class="form-control">
             </div> -->
             <button type="submit" class="btn btn-success">GO</button>
-          </form>  
-
-        </div><!--/.nav-collapse -->
+        </form>
+        </div>
+       <!--/.nav-collapse -->
       </div>
     </nav>
 
@@ -145,6 +145,48 @@
         <p>夜不秉烛则昧，冬不御裘则寒，渡河而乘陆车者危，易证而尝旧方者死。</p>
       </div>
 
+      <div class="page-header">
+        <h1>Message Board <small>Something Left,Something Taken.</small></h1>
+      </div>
+
+      <div class="container">
+      <!-- Example row of columns -->
+        <div class="row">
+          <div class="col-md-8">
+            <h2>Say something ?</h2>
+            <form class="" id="boardfrom">
+              <div class="col-md-12">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Contact:</label>
+                    <input type="text" placeholder="up to you" class="form-control">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Nickname:</label>
+                      <input type="text" name="nickname" placeholder="up to you" class="form-control">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                 <div class="form-group">
+                  <label>Content:</label>
+                    <textarea class="form-control" placeholder="bla bla bla..." rows="3" name="content" ></textarea>
+                 </div>
+              </div>
+              <div class="col-md-12">
+                <button type="button" class="btn btn-success">Submit</button>
+              </div>
+            </form>
+           <!--  <p><a class="btn btn-default" href="#" role="button">View details »</a></p> -->
+          </div>
+          <div class="col-md-4" id="messagebox">
+            
+
+          </div>
+        </div>
+      </div>
     
 
       <hr>
@@ -184,6 +226,9 @@
 
     <!-- helper.js -->
     <script src="/js/helper.js" type="text/javascript"></script>
+
+    <!-- messageboardlist -->
+    <script src="js/index/list.js" type="text/javascript"></script>
 
     <script type="text/javascript">
     //tips
